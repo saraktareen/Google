@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images Search</title>
+
+        <style>
+        #headings{
+            padding: 30px;
+            font-size: 70px;
+            text-align:center;
+            font-family:Product-sans
+        }
+
+        .links{
+            text-align:right;
+        }
+
+        .textarea{
+            border-radius:25px;
+            text-align:center;
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <div class= "links">
+        <a href="index.html"] 
+            color=blue;>
+            Google Search
+        </a>
+       <br>
+        <a href="advanced.html"] 
+            color=blue;>
+            Google Advanced Search
+        </a>
+    </div>
+
+    <h1 id="headings"> Google Images </h1>
+
+    <div class = "textarea">
+        <form action="https://google.com/search">
+            <input type="text" name="q" >
+            <br>
+            <br>
+            <input type="submit" value="Google Search">
+        </form>
+    </div>
+    </body>
+</html>

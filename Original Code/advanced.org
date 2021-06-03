@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+
+        <style>
+        #headings{
+            padding: 30px;
+            font-size: 70px;
+            text-align:center;
+            font-family:Product-sans
+        }
+
+        .links{
+            text-align:right;
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <div class= "links">
+        <a href="index.html"] 
+            color=blue;>
+            Google Search
+        </a>
+       <br>
+        <a href="images.html"] 
+            color=blue;>
+            Google Image Search
+        </a>
+    </div>
+
+    <h1 id="headings"> Google Advanced Search </h1>
+    </body>
+</html>

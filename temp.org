@@ -1,0 +1,9 @@
+   .logo{
+            display:block;
+            margin: 0px auto;
+            padding:70px;
+            margin-top:50px;
+            width:300px;
+            length: 50px;
+        }
+<img src="Images/Google.jpg" class="logo">
