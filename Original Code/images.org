@@ -3,24 +3,7 @@
     <head>
         <title>Google Images Search</title>
 
-        <style>
-        #headings{
-            padding: 30px;
-            font-size: 70px;
-            text-align:center;
-            font-family:Product-sans
-        }
 
-        .links{
-            text-align:right;
-        }
-
-        .textarea{
-            border-radius:25px;
-            text-align:center;
-        }
-
-        </style>
     </head>
     <body>
 

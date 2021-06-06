@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Google Images</title>
+        <title>Google Search</title>
         <link rel="icon" href="./Images/logo.png">
         <link rel="stylesheet" href="styles.css">
 
@@ -11,29 +11,36 @@
     <body>
 
         <div class= "links">
-            <a href="search.html">
-                Google Search
+            <a href="images.html">
+                Google Image Search
             </a>
             <br>
-            <a href="advanced.html">
+            <a href="advanced.html"]>
                 Google Advanced Search
+            </a>
+            <br>
+            <a href="base.html"] 
+                color=blue;>
+                Footer
             </a>
         </div>
 
         <section>
             <h1><span style="color: #4285F4;">G</span><span style="color: #DB4437;">o</span><span style="color: #F4B400;">o</span><span style="color: #4285F4">g</span><span style="color: #0F9D58;">l</span><span id="e" style="color: #DB4437;">e</span></h1>
             </h1>
-            <div class="images-logo">
-                <h4>images</h4>
-            </div>
 
             <div class="textbox">
-                <form action="http://www.google.com/images">
+                <form action="https://google.com/search">
                 <input type="text" name="q">
                 </form>     
             </div>  
-
+                    <div class="buttons">
+                        <input type="submit" value="Google Search">
+                        <input type="submit" value="I'm Feeling Lucky">
+                    </div>
         </section>
+
+        
         
         <footer>
             <nav id="footer-country">
@@ -44,9 +51,9 @@
 
             <nav id="footer-nav">
                 <ul id="footer-left">
+                    <a href="#">About</a>
                     <a href="#">Advertising</a>
                     <a href="#">Business</a>
-                    <a href="#">About</a>
                     <a href="#">How Search Works</a>
                 </ul>
                 <ul id="footer-right">
@@ -56,6 +63,11 @@
                 </ul>
             </nav>
         </footer>
-    
     </body>
 </html>
+
+
+
+<img src="./Images/microphone.png" alt="microphone">
+<img src="./Images/search-icon.png" alt="search-icon">
+
