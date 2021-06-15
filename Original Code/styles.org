@@ -6,6 +6,13 @@ body {
     margin: 1;
 }
 
+/* NAVIGATION BAR AT ADVANCED SEARCH */
+nav {
+    margin: 5px;
+    display: flex;  /* By default, the flex-direction is set to row. */
+    justify-content: space-between; /* Used to align the flex items. */
+}
+
 /* LOGO */
 section {
     display: flex;
@@ -20,6 +27,7 @@ section {
     src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
+/* GOOGLE SEARCH PAGE */
 h1{
     font-family: 'Product Sans';
     font-weight: 608;
@@ -28,13 +36,28 @@ h1{
     transform: scale(1.2,1.2); /* Transformation of the 'Google' logo to be a bit bigger */
 }
 
-#e {
-    transform: rotate(315deg); /* For the rotated letter 'e' in Google */
+/* GOOGLE IMAGES PAGE */
+.images-logo > h4{
+    font-family: roboto-regular,arial,sans-serif;
+    font-weight:20;
+    font-size: 16px;
+    color: #4285FA;
+}
+
+/* GOOGLE ADVANCED SEARCH PAGE */
+h2 {
+    color:#D93025;
+    font-size: 20px;
+    font-weight:10;
+    font-family: arial,sans-serif;
+    padding-left:37px;
 }
 
 /* SEARCH BAR */
 
-/* Text bar */
+
+
+/* GOOGLE SEARCH PAGE Text bar */
 input[type=text], select {
     display: flex; 
     justify-content: space-between;
@@ -43,6 +66,7 @@ input[type=text], select {
     border: 1px solid gainsboro; /*Border of the textbox*/
     border-radius: 20px; /* Round edges of the textbox*/
 }
+
 
 /* When the cursor touches the textbar */
 input[type="text"]:hover {
@@ -70,11 +94,51 @@ input[type="submit"]:hover {
     box-shadow: 0 0 2px 0 gainsboro
 }
 
+/* GOOGLE ADVANCED Search bar */
+.Advanced-searchbox > p {
+    color: #333333;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    padding-left:37px;
+}
+
+/* GOOGLE ADVANCED Search bar */
+label {
+    color: #222222;
+    font-size: 13px;
+    font-weight:10;
+    font-family: arial, sans-serif;
+    padding-left:37px;
+}
+
+/* Textbox in ADVANCED SEARCH */
+input[type="char"] {
+    font-family: arial, sans-serif;
+    border: 1px solid gainsboro;
+    border-top:1px solid #c0c0c0;
+    color:black;
+    font-size: 13px;
+    height: 23px;
+    padding:1px 20px;
+    border-radius: 1px;
+}
+
+input[type="char"], select {
+    cursor:text;
+}
+
+#advanced-button{
+    background-color:#4D90FE;
+    color:white;
+    font-weight:bold;
+    margin: 10px 0px;
+    padding: 0px 12px;
+}
+
 /* IMAGES IN SEARCHBAR */
 
 
 /* FOOTER */
-
 nav{
     display: flex;
     justify-content: space-between; /* Gives space between the left and right part of the footer */
@@ -126,7 +190,7 @@ footer {
     color: #70757A;
 }
 
-#footer-left:hover {
+#footer-left  > a:hover {
     text-decoration:underline;
     cursor: pointer;
 }
@@ -147,7 +211,7 @@ footer {
     color: #70757A;
 }
 
-#footer-right:hover {
+#footer-right > a:hover {
     text-decoration:underline;
     cursor: pointer;
 }

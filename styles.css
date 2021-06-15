@@ -1,10 +1,157 @@
+/* Refers to all the links in the top right corner */
 .links{
-    text-align:right;
-}
+    text-align:right;}
 
 body {
-    margin: 1;
+    margin: 1;}
+
+
+/* -------- Google Search Page ---------- */
+
+/* GOOGLE LOGO PLACEMENT */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh; /* Space from the very top of the webpage */
 }
+/* GOOGLE LOGO */
+.search-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+/* SEARCH BAR POSITION */
+#ssearchbar{
+    padding-bottom: 15px;
+    position: relative;
+    }
+    
+/* SEARCH BAR APPEARANCE */
+#ssearch_bar{
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 24px;
+    width: 500px;
+    height: 45px;
+    padding-left: 50px;
+    padding-right: 50px
+}
+  
+/* When the cursor touches the searchbar */
+#ssearch_bar:hover {
+    box-shadow:0 0 10px 0 gainsboro;
+}
+
+/* Buttons below the searchbar */
+#button_1, #button_2  {
+    align-items: center;
+    font-family: arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8F9FA;
+    color: #222222;
+    border:none;
+    border-radius: 3px;
+    height: 36px; /*Height of the button*/
+    padding: 0 16px; /*Size of the button*/
+    margin: 11px 14px; /*Increases the space between the buttons, creating margin space*/
+    font-size:14px;
+}
+
+/* Places the buttons in the center */
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* When the cursor touches the buttons*/
+#button_1:hover, #button_2:hover {
+    cursor: pointer;
+    border: solid 1px gainsboro;
+    box-shadow: 0 0 2px 0 gainsboro
+}
+
+/* SEARCH ICON IN THE SEARCHBAR */ 
+#icon-search {
+    background-color: var(--search-box-icon, var(--google-grey-refresh-700));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 24px;
+}
+
+/* MIC ICON IN SEARCHBAR */
+#icon-mic{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    cursor:pointer;
+}
+
+/* ------------ Google Images Search --------------- */
+
+/* Search bar Position */
+#isearchbar{
+    padding-bottom: 15px;
+    position: relative;
+}
+    
+
+/* Search bar appearance*/
+#isearch_bar{
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 50px;
+    width: 500px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px
+}
+    
+/* When the cursor touches the search bar */
+#isearch_bar:hover {
+    box-shadow:0 0 10px 0 gainsboro;
+}
+
+/* Microphone icon */
+#icon-i-mic{
+    position: absolute;
+    top: 12px;
+    right: 58px;
+    cursor:pointer;
+}
+
+/* Camera icon*/
+#icon-camera{
+    position: absolute;
+    top: 12px;
+    right: 100px;
+    cursor:pointer;
+}
+
+/* Magnifying glass icon */
+#icon-magnifying-glass{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    cursor:pointer;   
+}
+
+#hide-button{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* ------------ Google Advanced Search ----------- */
 
 /* NAVIGATION BAR AT ADVANCED SEARCH */
 nav {
@@ -13,38 +160,7 @@ nav {
     justify-content: space-between; /* Used to align the flex items. */
 }
 
-/* LOGO */
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8vh; /* Space from the very top of the webpage */
-}
-
-@font-face {
-    font-family: 'Product Sans';
-    font-style: normal;
-    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-}
-
-/* GOOGLE SEARCH PAGE */
-h1{
-    font-family: 'Product Sans';
-    font-weight: 608;
-    font-size: 4.5em;
-    height: 72px; /* Height of the Google logo */
-    transform: scale(1.2,1.2); /* Transformation of the 'Google' logo to be a bit bigger */
-}
-
-/* GOOGLE IMAGES PAGE */
-.images-logo > h4{
-    font-family: roboto-regular,arial,sans-serif;
-    font-weight:20;
-    font-size: 16px;
-    color: #4285FA;
-}
-
-/* GOOGLE ADVANCED SEARCH PAGE */
+/* GOOGLE ADVANCED HEADING */
 h2 {
     color:#D93025;
     font-size: 20px;
@@ -53,48 +169,7 @@ h2 {
     padding-left:37px;
 }
 
-/* SEARCH BAR */
-
-
-
-/* GOOGLE SEARCH PAGE Text bar */
-input[type=text], select {
-    display: flex; 
-    justify-content: space-between;
-    width: 600px; /*Width of the textbox*/
-    height: 38px; /* Height of the textbox */
-    border: 1px solid gainsboro; /*Border of the textbox*/
-    border-radius: 20px; /* Round edges of the textbox*/
-}
-
-
-/* When the cursor touches the textbar */
-input[type="text"]:hover {
-    box-shadow:0 0 10px 0 gainsboro;
-}
-
-/* Buttons below the textbar */
-input[type="submit"]  {
-    font-family: arial, sans-serif;
-    text-align: center;
-    background-color: #f8F9FA;
-    color: #222222;
-    border:none;
-    border-radius: 3px;
-    height: 36px; /*Height of the button*/
-    padding: 0 16px; /*Size of the button*/
-    margin: 11px 14px; /* Increases the space between the buttons, creating margin space*/
-    font-size:14px;
-}
-
-/* When the cursor touches the buttons*/
-input[type="submit"]:hover {
-    cursor: pointer;
-    border: solid 1px gainsboro;
-    box-shadow: 0 0 2px 0 gainsboro
-}
-
-/* GOOGLE ADVANCED Search bar */
+/* Search bar Appearance */
 .Advanced-searchbox > p {
     color: #333333;
     font-size: 16px;
@@ -102,16 +177,18 @@ input[type="submit"]:hover {
     padding-left:37px;
 }
 
-/* GOOGLE ADVANCED Search bar */
+/* Appearance of labels for each searchbar*/
 label {
     color: #222222;
     font-size: 13px;
     font-weight:10;
     font-family: arial, sans-serif;
     padding-left:37px;
+    width: 180px;
+    display: inline-block;
 }
 
-/* Textbox in ADVANCED SEARCH */
+/* Textbox */
 input[type="char"] {
     font-family: arial, sans-serif;
     border: 1px solid gainsboro;
@@ -123,23 +200,51 @@ input[type="char"] {
     border-radius: 1px;
 }
 
+/* When you click the text bar */
 input[type="char"], select {
-    cursor:text;
+    cursor:text
 }
 
-#advanced-button{
+/* Buttons below the searchbar */
+#advanced-button {
+    font-family: arial, sans-serif;
+    background-color: #4D90FE;
+    color: white;
+    font-weight:bold;
+    border:1px solid #4D90FE;
+    border-radius: 3px;
+    height: 28px; /*Height of the button*/
+    padding: 0 12px; /*Size of the button*/
+    margin: 10px 0px; /*Increases the space between the buttons, creating margin space*/
+    font-size:11px;
+}
+
+/* When the cursor touches the buttons*/
+#advanced-button:hover {
+    cursor: pointer;
+    border: solid 1px #4169e1;
+    box-shadow: 0 0 2px 0 gainsboro;
+}
+
+/* Search button */
+#advanced-button {
     background-color:#4D90FE;
+    align-items:right;
     color:white;
     font-weight:bold;
     margin: 10px 0px;
     padding: 0px 12px;
 }
 
-/* IMAGES IN SEARCHBAR */
+.abutton{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
 
 
 /* FOOTER */
-nav{
+nav {
     display: flex;
     justify-content: space-between; /* Gives space between the left and right part of the footer */
 }
@@ -156,7 +261,7 @@ footer {
     width: 100vw;
 }
 
-/* Top  part of the footer */
+/* Top part of the footer */
 #footer-country {
     display: flex;
     color: #0000008A;
@@ -165,7 +270,6 @@ footer {
     justify-self: start;
     padding-left: 20px;
     align-items: left;
-  
 }
 
 /* Creates a vertical line in the footer */
@@ -185,7 +289,7 @@ footer {
 }
 
 /* All links in the left footer */
-#footer-left > a{
+#footer-left > a {
     text-decoration:none; 
     color: #70757A;
 }
@@ -206,7 +310,7 @@ footer {
 }
 
 /* All the links in the right side of the footer */
-#footer-right > a{
+#footer-right > a {
     text-decoration:none; 
     color: #70757A;
 }
@@ -235,7 +339,7 @@ footer {
     }
 }
 
-@media (max-height: 522px){
+@media (max-height: 522px) {
     body{
         overflow-x: hidden;
     }

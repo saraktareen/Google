@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Google Advanced Search</title>
+        <link rel="icon" href="./Images/logo.png">
+        <link rel="stylesheet" href="styles.css">
 
-        <style>
-        #headings{
-            padding: 30px;
-            font-size: 70px;
-            text-align:center;
-            font-family:Product-sans
-        }
-
-        .links{
-            text-align:right;
-        }
-
-        </style>
     </head>
     <body>
 
-    <div class= "links">
-        <a href="index.html"] 
-            color=blue;>
-            Google Search
-        </a>
-       <br>
-        <a href="images.html"] 
-            color=blue;>
-            Google Image Search
-        </a>
-    </div>
+        <header>
+            <nav>
+                <img src="./Images/Google.png">
+                <ul class="links">
+                    <a href="search.html">Google Search</a>
+                </ul>
+            </nav>
+        </header>
 
-    <h1 id="headings"> Google Advanced Search </h1>
+        <h2>Advanced Search</h2>
+        <div class="vertical-line"</div>
+        <br>
+        <br>
+
+        <div class="Advanced-searchbox">
+            <p>Find pages with...</p>
+            <form action="https://google.com/search" name="f">
+                <label for="text-1">all these words:</label>
+                <input type="char" id="text-1" name="as_q" max-length="1000" size="57">
+                    <br>
+                    <br>
+                <label for="text-2">this exact word or phrase:</label>
+                <input type="char" id="text-2" name="as_epq" max-length="1000" size="57">
+                    <br>
+                    <br>
+                <label for="text-3">any of these words:</label>
+                <input type="char" id="text-3" name="as_oq" max-length="1000" size="57">
+                    <br>
+                    <br>
+                <label for="text-4">none of these words:</label>
+                <input type="char" id="text-4" name="as_eq" max-length="1000" size="57">
+                    <br>
+                    <br>
+                    <br>
+                <div class="vertical-line"</div>
+                    <input id="advanced-button" type="submit" value="Advanced Search">
+                </div>            
+            </form> 
+        </div>
+
+
+
+        <br>
+        <br>
+        <br>
+        <footer>
+            <nav id="footer-country">
+                <p>Pakistan</p>
+            </nav>
+
+            <div class="vertical-line"</div>
+
+            <nav id="footer-nav">
+                <ul id="footer-left">
+                    <a href="#">Help</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
+
+
