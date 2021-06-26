@@ -146,11 +146,6 @@ section {
     cursor:pointer;   
 }
 
-#hide-button{
-    background-color: transparent;
-    border-color: transparent;
-}
-
 /* ------------ Google Advanced Search ----------- */
 
 /* NAVIGATION BAR AT ADVANCED SEARCH */
@@ -179,14 +174,15 @@ h2 {
 
 /* Appearance of labels for each searchbar*/
 label {
-    color: #222222;
-    font-size: 13px;
+    color: #555555;
+    font-size: 11px;
     font-weight:10;
     font-family: arial, sans-serif;
     padding-left:37px;
-    width: 180px;
+    width: 166px;
     display: inline-block;
 }
+
 
 /* Textbox */
 input[type="char"] {
