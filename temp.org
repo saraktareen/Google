@@ -1,6 +1,0 @@
-/* NAVIGATION BAR AT ADVANCED SEARCH */
-nav {
-    margin: 5px;
-    display: flex;  /* By default, the flex-direction is set to row. */
-    justify-content: space-between; /* Used to align the flex items. */
-}
